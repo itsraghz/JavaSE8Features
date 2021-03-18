@@ -1,6 +1,5 @@
 package com.raghsonline.javase.v8.streams;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -47,7 +46,8 @@ public class StreamsDemo {
         System.out.println();
         System.out.println("-------------------------");
         System.out.println("Stream toString() --> " + numberStream.toString());
-        numberStream.forEach(System.out::print);
+        //numberStream.forEach(System.out::print);
+        numberStream.forEach(p -> System.out.print(p+ " "));
         System.out.println();
         System.out.println("-------------------------");
     }
@@ -149,14 +149,16 @@ public class StreamsDemo {
      *     consumed from the resulting stream.
      * </p>
      * <p>
-     *     The <tt>peek()</tt> operation does nothing if we do not specify a terminal operation.
+     *     <b>Note: </b> The <tt>peek()</tt> operation does nothing if we do not specify a terminal operation.
      * </p>
      */
     private static void streamIntermediateMethod6PeekDemo() {
-        Stream.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+        List<Integer> evenNumbersList = Stream.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .filter(x -> x % 2 == 0)
                 .peek(e -> System.out.println("The even number is : " + e))
                 .collect(Collectors.toList());
+
+        System.out.println("Even Numbers List contains : " + evenNumbersList);
     }
 
     //////////////////////////////////////////////////////////////////////////////
@@ -182,8 +184,9 @@ public class StreamsDemo {
     private static void streamTerminalMethod1CollectDemo() {
         List<String> listOfNames = Arrays.asList("Raghavan", "Kannan", "Raja", "Saravanan", "Ravi");
         List<String> namesWithRList = listOfNames.stream().filter(x -> x.startsWith("R")).collect(Collectors.toList());
-
         System.out.println("namesWithRList :: " + namesWithRList);
+
+        listOfNames.stream().filter(x -> x.startsWith("K")).mapToInt(x -> x.length()).forEach(System.out::println);
     }
 
     /**
