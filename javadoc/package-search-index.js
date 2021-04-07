@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.raghsonline.javase.v8"},{"l":"com.raghsonline.javase.v8.lambdas.packtpub"},{"l":"com.raghsonline.javase.v8.methodref.packtpub"},{"l":"com.raghsonline.javase.v8.streams"}]
