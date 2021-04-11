@@ -1,5 +1,7 @@
 package com.raghsonline.javase.v8.lambdas.packtpub;
 
+import com.raghsonline.util.LoggerUtil;
+
 /**
  * <p>
  *     Reference: Packtpub Video Course - Mastering Java SE 8 - 9781801072533
@@ -56,8 +58,8 @@ public class LambdaDemo3 {
      * </p>
      */
     private static void lambdaDemo4() {
-        Runnable r = () -> System.out.println("Hello - from a Lambda of Runnable Instance run() method");
-        Executor e = () -> System.out.println("Hello - from a Lambda of Executor Instance execute() method");
+        Runnable r = () -> LoggerUtil.log("Hello - from a Lambda of Runnable Instance run() method");
+        Executor e = () -> LoggerUtil.log("Hello - from a Lambda of Executor Instance execute() method");
 
         r.run();
         e.execute();

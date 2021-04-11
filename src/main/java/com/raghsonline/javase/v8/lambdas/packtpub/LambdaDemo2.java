@@ -1,5 +1,7 @@
 package com.raghsonline.javase.v8.lambdas.packtpub;
 
+import com.raghsonline.util.LoggerUtil;
+
 /**
  * <p>
  *     Reference: Packtpub Video Course - Mastering Java SE 8 - 9781801072533
@@ -51,7 +53,7 @@ public class LambdaDemo2 {
      * </p>
      */
     private static void lambdaDemo3() {
-        StringRunnable sr = (name) -> System.out.println("Hello " + name + "!");
+        StringRunnable sr = (name) -> LoggerUtil.log("Hello " + name + "!");
         sr.run("Raghs");
     }
 

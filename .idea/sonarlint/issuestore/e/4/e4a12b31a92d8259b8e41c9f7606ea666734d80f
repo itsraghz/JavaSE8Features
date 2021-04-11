@@ -1,0 +1,29 @@
+
+Xjavascript:S1854…
+"6Remove this useless assignment to variable "uniqueId".(Æ­î¦ÿÿÿÿÿ
+Vjavascript:S1854Î
+"9Remove this useless assignment to variable "widgetsMenu".(ÊÃùÏ
+Ojavascript:S1117ú"2'position' is already declared in the upper scope.(šÁ‰
+Vjavascript:S1481Ï	"9Remove the declaration of the unused 'position' variable.(ÚÜÇ
+Tjavascript:S1481"8Remove the declaration of the unused 'version' variable.(ï•˜Ö
+Ojavascript:S1117ø"2'position' is already declared in the upper scope.(¨ëÍ‡
+Rjavascript:S1854á	"5Remove this useless assignment to variable "keycode".(åæ‰ˆ
+Vjavascript:S1854ç"4Remove this useless assignment to variable "widget".(»¹¥Ùüÿÿÿÿ
+Sjavascript:S1854Ï	"6Remove this useless assignment to variable "position".(ÚÜÇ
+Tjavascript:S1117Ê"2'position' is already declared in the upper scope.(€šÙÿøÿÿÿÿ
+Ojavascript:S1117"2'position' is already declared in the upper scope.(¨ëÍ‡
+Yjavascript:S1481ç"7Remove the declaration of the unused 'widget' variable.(»¹¥Ùüÿÿÿÿ
+ajavascript:S1481Ş"DRemove the declaration of the unused 'widgetsAutocomplete' variable.(ê‰‹‘
+Ojavascript:S1117Å"2'position' is already declared in the upper scope.(§¸µ”
+^javascript:S1854Ş"ARemove this useless assignment to variable "widgetsAutocomplete".(ê‰‹‘
+_javascript:S1481
+"BRemove the declaration of the unused 'safeActiveElement' variable.(Ã©‡¡
+\javascript:S1854
+"?Remove this useless assignment to variable "safeActiveElement".(Ã©‡¡
+Ujavascript:S1481á	"8Remove the declaration of the unused 'keycode' variable.(åæ‰ˆ
+Qjavascript:S1854"5Remove this useless assignment to variable "version".(ï•˜Ö
+Yjavascript:S1481Î
+"<Remove the declaration of the unused 'widgetsMenu' variable.(ÊÃùÏ
+[javascript:S1481…
+"9Remove the declaration of the unused 'uniqueId' variable.(Æ­î¦ÿÿÿÿÿ
+Tjavascript:S1117œ	"2'position' is already declared in the upper scope.(€šÙÿøÿÿÿÿ

@@ -1,5 +1,7 @@
 package com.raghsonline.javase.v8.streams;
 
+import com.raghsonline.util.LoggerUtil;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -31,25 +33,25 @@ public class StreamsDemo {
 
     private static void createStreams2OnStream() {
         newNumberStream = Stream.of(1,2,3,4,5,6,7,8,9,10);
-        System.out.println("newNumberStream : " + newNumberStream);
+        LoggerUtil.log("newNumberStream : " + newNumberStream);
         printStream(newNumberStream);
     }
 
     private static void createStreams1OnCollection() {
         numberStream = numbersList.stream();
-        System.out.println("numberList : " + numbersList);
-        System.out.println("numberStream : " + numberStream);
+        LoggerUtil.log("numberList : " + numbersList);
+        LoggerUtil.log("numberStream : " + numberStream);
         printStream(numberStream);
     }
 
     private static void printStream(Stream<Integer> numberStream) {
-        System.out.println();
-        System.out.println("-------------------------");
-        System.out.println("Stream toString() --> " + numberStream.toString());
+        LoggerUtil.log();
+        LoggerUtil.log("-------------------------");
+        LoggerUtil.log("Stream toString() --> " + numberStream.toString());
         //numberStream.forEach(System.out::print);
         numberStream.forEach(p -> System.out.print(p+ " "));
-        System.out.println();
-        System.out.println("-------------------------");
+        LoggerUtil.log();
+        LoggerUtil.log("-------------------------");
     }
 
     //////////////////////////////////////////////////////////////////////////////
@@ -76,7 +78,7 @@ public class StreamsDemo {
         //    java.lang.IllegalStateException: stream has already been operated upon or closed
         numberStream = numbersList.stream();
         List<Integer> squaredNumbersList = numberStream.map(x -> x * x).collect(Collectors.toList());
-        System.out.println("squaredNumbersList :: " + squaredNumbersList);
+        LoggerUtil.log("squaredNumbersList :: " + squaredNumbersList);
     }
 
     /**
@@ -90,7 +92,7 @@ public class StreamsDemo {
     private static void streamIntermediateMethod2FilterDemo() {
         numberStream = numbersList.stream();
         List<Integer> evenNumbersList = numberStream.filter(x -> x % 2 == 0).collect(Collectors.toList());
-        System.out.println("evenNumbersList :: " + evenNumbersList);
+        LoggerUtil.log("evenNumbersList :: " + evenNumbersList);
     }
 
     /**
@@ -104,7 +106,7 @@ public class StreamsDemo {
     private static void streamIntermediateMethod3SortedDemo() {
         List<Integer> numberList = Arrays.asList(6,7,8,1,4,5,3,2,9,10);
         List<Integer> sortedList = numberList.stream().sorted().collect(Collectors.toList());
-        System.out.println("sortedList :: " + sortedList);
+        LoggerUtil.log("sortedList :: " + sortedList);
     }
 
     /**
@@ -124,7 +126,7 @@ public class StreamsDemo {
         List<List<Integer>> listOfNumberLists = Arrays.asList(list1, list2, list3);
         List<Integer> listOfAllIntegers = listOfNumberLists.stream().flatMap(x -> x.stream()).collect(Collectors.toList());
 
-        System.out.println("flatMap listOfAllIntegers :: " + listOfAllIntegers);
+        LoggerUtil.log("flatMap listOfAllIntegers :: " + listOfAllIntegers);
     }
 
     /**
@@ -137,9 +139,9 @@ public class StreamsDemo {
     private static void streamIntermediateMethod5DistinctDemo() {
         List<Integer> numbersList = Arrays.asList(1, 4, 5, 1, 2, 3, 6, 4);
         List<Integer> distinctNumberList = numbersList.stream().distinct().collect(Collectors.toList());
-        System.out.println("distinctNumberList :: " + distinctNumberList);
+        LoggerUtil.log("distinctNumberList :: " + distinctNumberList);
         List<Integer> distinctNumberSortedList = numbersList.stream().distinct().sorted().collect(Collectors.toList());
-        System.out.println("distinctNumberSortedList :: " + distinctNumberSortedList);
+        LoggerUtil.log("distinctNumberSortedList :: " + distinctNumberSortedList);
     }
 
     /**
@@ -155,10 +157,10 @@ public class StreamsDemo {
     private static void streamIntermediateMethod6PeekDemo() {
         List<Integer> evenNumbersList = Stream.of(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
                 .filter(x -> x % 2 == 0)
-                .peek(e -> System.out.println("The even number is : " + e))
+                .peek(e -> LoggerUtil.log("The even number is : " + e))
                 .collect(Collectors.toList());
 
-        System.out.println("Even Numbers List contains : " + evenNumbersList);
+        LoggerUtil.log("Even Numbers List contains : " + evenNumbersList);
     }
 
     //////////////////////////////////////////////////////////////////////////////
@@ -184,7 +186,7 @@ public class StreamsDemo {
     private static void streamTerminalMethod1CollectDemo() {
         List<String> listOfNames = Arrays.asList("Raghavan", "Kannan", "Raja", "Saravanan", "Ravi");
         List<String> namesWithRList = listOfNames.stream().filter(x -> x.startsWith("R")).collect(Collectors.toList());
-        System.out.println("namesWithRList :: " + namesWithRList);
+        LoggerUtil.log("namesWithRList :: " + namesWithRList);
 
         listOfNames.stream().filter(x -> x.startsWith("K")).mapToInt(x -> x.length()).forEach(System.out::println);
     }
@@ -198,7 +200,7 @@ public class StreamsDemo {
         List<String> listOfNames = Arrays.asList("Raghavan", "Kannan", "Raja", "Saravanan", "Ravi");
         long count = listOfNames.stream().filter(x -> x.startsWith("R")).count();
 
-        System.out.println("namesWithRList count :: " + count);
+        LoggerUtil.log("namesWithRList count :: " + count);
     }
 
     /**
@@ -211,7 +213,7 @@ public class StreamsDemo {
         List<String> listOfNames = Arrays.asList("Raghavan", "Kannan", "Raja", "Saravanan", "Ravi");
         boolean areAllNamesStartWithR  = listOfNames.stream().allMatch(x -> x.startsWith("R"));
 
-        System.out.println("namesWithRList areAllNamesStartWithR :: " + areAllNamesStartWithR);
+        LoggerUtil.log("namesWithRList areAllNamesStartWithR :: " + areAllNamesStartWithR);
     }
 
     /**
@@ -222,14 +224,14 @@ public class StreamsDemo {
      */
     private static void streamTerminalMethod4AnyMatchDemo() {
         List<String> listOfNames = Arrays.asList("Raghavan", "Kannan", "Raja", "Saravanan", "Ravi");
-        System.out.println("listOfNames : " + listOfNames);
+        LoggerUtil.log("listOfNames : " + listOfNames);
         boolean areAnyNamesStartWithR  = listOfNames.stream().anyMatch(x -> x.startsWith("R"));
 
-        System.out.println("namesWithRList areAnyNamesStartWithR :: " + areAnyNamesStartWithR);
+        LoggerUtil.log("namesWithRList areAnyNamesStartWithR :: " + areAnyNamesStartWithR);
 
         boolean areAnyNamesStartWithJ  = listOfNames.stream().anyMatch(x -> x.startsWith("J"));
 
-        System.out.println("namesWithRList areAnyNamesStartWithJ :: " + areAnyNamesStartWithJ);
+        LoggerUtil.log("namesWithRList areAnyNamesStartWithJ :: " + areAnyNamesStartWithJ);
     }
 
     /**

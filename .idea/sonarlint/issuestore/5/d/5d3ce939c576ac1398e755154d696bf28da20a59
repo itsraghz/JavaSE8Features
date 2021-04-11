@@ -1,9 +1,7 @@
 
-H
-java:S3958"2Refactor the code so this stream pipeline is used.(åæÑİ
-<
-java:S3864"!Remove this use of "Stream.peek".(Ş’¶çùÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Ş’¶çùÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¨ŒÍ˜ÿÿÿÿÿ
+7
+java:S3864"!Remove this use of "Stream.peek".(¼Š°„
 S
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ
+H
+java:S3958"2Refactor the code so this stream pipeline is used.(åæÑİ

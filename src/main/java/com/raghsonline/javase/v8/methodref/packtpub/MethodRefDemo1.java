@@ -1,5 +1,7 @@
 package com.raghsonline.javase.v8.methodref.packtpub;
 
+import com.raghsonline.util.LoggerUtil;
+
 import java.util.function.Consumer;
 
 /**
@@ -28,7 +30,7 @@ public class MethodRefDemo1 {
     }
 
     private static void consumerEx1NoMethodRef() {
-        Consumer<String> greetingFn = greeting -> System.out.println(greeting);
+        Consumer<String> greetingFn = greeting -> LoggerUtil.log(greeting);
         greetingFn.accept("Java8Consumer with no Method Reference - Old School");
     }
 }

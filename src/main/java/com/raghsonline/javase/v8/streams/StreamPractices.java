@@ -1,5 +1,7 @@
 package com.raghsonline.javase.v8.streams;
 
+import com.raghsonline.util.LoggerUtil;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,10 +20,10 @@ public class StreamPractices {
     private static void sumStream(List<Integer> intList) {
         int sum = intList.stream()
                 .filter(x -> x > 10)
-                .peek(x -> System.out.println("Element selected : " + x))
+                .peek(x -> LoggerUtil.log("Element selected : " + x))
                 .mapToInt(x -> x)
                 .sum();
 
-        System.out.println("Sum of all numbers greater than 10 :: " + sum);
+        LoggerUtil.log("Sum of all numbers greater than 10 :: " + sum);
     }
 }
