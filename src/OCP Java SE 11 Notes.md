@@ -19,3 +19,76 @@
    meaningfully, instead it just invokes the `equals()` method of the 
    `java.lang.Object` class - that just checks the 
    `reference equals, ==`.
+   
+## Enum
+
+ * Enum/Enumeration is a Java type that is used to accommodate a list of well known, static values. 
+ * Semicolon is optional if the enum has only the list of values.
+ * An Enum is a type and hence it can't be compared with an integer, though
+   each enum value has an inbuilt property called `ordinal` that gives an
+   incremental set of values.
+ * Enum values are case sensitive
+ * Enum CANNOT be extended by another enum, unlike Interfaces or Classes.
+ * Enum provides an inbuilt method called `values()` that returns an array of 
+   all the values in that Enum type, that can be used as yet another array.
+ * Enums can have more than just values, they can accommodate `field`s, 
+   `method`s and `constructor`s. 
+ * An enum can also have an `abstract method`, where each of the enum values are
+   expected to provide an implementation of that abstract method. 
+ * We can also provide a default implementation of a method, which only a specific
+   enum types can override for a purpose, whereas the rest can use this default version.
+   
+> Recommendation: Try to keep your enum as simple as possible, to keep it easy to read. 
+> It is best when it is only handful of lines.
+
+## Nested Class
+
+ * Nested class is a class defined within another class. 
+ * A class that is *NOT* static is an `inner` class.
+ * Benefits of using a nested classes are :
+     * They encapsulate helper classes by restricting them to the containing class.
+     * They make it easy to create a class that will be used in only one place.
+     * They can make the code easier to read, when used properly.
+ * There are four types of nested classes in Java.
+    
+    | Type | Description |
+    | ---- | ----------- |
+    | Member Inner Class | A class defined at the same level of an instance variable. It is referred to as an inner class without explicitly stating the type. | 
+    | Static Nested Class | A class defined at the same level of a static variable. It should be referred to as an inner class by explicitly saying the type. |
+    | Local Inner Classs | A class defined within a method. |
+    | Anonymous Inner Class | A class defined within a method but does not have a name. |
+
+### Member Inner Class
+
+ * Declared at the member level of the class (the same level as methods, instance variables and constructors)
+ * Can have any modifier - `private`, `public`, `protected` or `default` access
+ * Can `extend` any class or `implement` any interface
+ * Can be `abstract` or `final`   
+ * Can NOT declare `static` fields or methods   
+ * Can access members of the outer class including the `private` members
+
+### Local Inner Class
+
+* Declared / Defined within a method
+* Do _NOT_ have any modifier or access specifier - `private`, `public`, `protected` or `default` access
+* Can _NOT_ `extend` any class or `implement` any interface
+* Can _NOT_ be `abstract` or `final`
+* Can NOT declare `static` fields or methods
+* Can get access to all the fields and methods of the enclosing class
+* Can get access to the local variables of the method provided they are final, or `effectively final`
+    * Up until Java 7, the local variables were accessible to a local inner class ONLY if they were declared final.
+    * Since Java 8, the term `effectively final` was introduced - to mean that the
+      code could compile as if the variable can have the `final` added -
+      meaning the variable has only one assignment and not more to consider it as effectively final
+
+> If the local variable is final,  Java can handle it by passing it to the constructor
+> of the inner class or by storing it in the class file.
+> If it weren’t effectively final, these tricks wouldn’t work because the value could change
+after the copy was made.
+
+### Anonymous Inner Class
+
+* A class declared inside a method but *without* a name.
+* 
+
+### Static Inner Class 

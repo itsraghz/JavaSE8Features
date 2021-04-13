@@ -1,3 +1,8 @@
 
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯şØ
-U	java:S106"9Replace this use of System.out or System.err by a logger.(µ‹³8¿·­ú‹/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ë¹äøÿÿÿÿ8¹Ü×ŠŒ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¤Ş¢®üÿÿÿÿ8¹Ü×ŠŒ/
+Æ
+java:S1130"£Remove the declaration of thrown exception 'com.raghsonline.javase.practiceQ.basics.udemy.javinpaul.BadRecipeException', as it cannot be thrown from method's body.(ì—Û¹ûÿÿÿÿ8¹Ü×ŠŒ/
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯şØ8¹Ü×ŠŒ/
+G
+java:S1181"%Catch Exception instead of Throwable.(‡˜ÚÚøÿÿÿÿ8¹Ü×ŠŒ/

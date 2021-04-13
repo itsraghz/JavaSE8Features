@@ -1,7 +1,7 @@
 
-7
-java:S3864"!Remove this use of "Stream.peek".(¼Š°„
-S
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ
 H
 java:S3958"2Refactor the code so this stream pipeline is used.(åæÑÝ
+S
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ
+7
+java:S3864"!Remove this use of "Stream.peek".(¼Š°„
