@@ -1,21 +1,21 @@
 
-O
-java:S1612¿",Replace this lambda with a method reference.(ŞŸ¨şÿÿÿÿ8ÑÌâŒ/
+l
+java:S1192»"IDefine a constant instead of duplicating this literal "Raghavan" 5 times.(û¹ş°ÿÿÿÿÿ8ÑÌâŒ/
+m
+java:S1192»"JDefine a constant instead of duplicating this literal "Saravanan" 5 times.(û¹ş°ÿÿÿÿÿ8ÑÌâŒ/
+j
+java:S1192»"GDefine a constant instead of duplicating this literal "Kannan" 5 times.(û¹ş°ÿÿÿÿÿ8ÑÌâŒ/
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(°ú¬Š8ÑÌâŒ/
 J
 java:S1659"-Declare "newNumberStream" on a separate line.(®ÅÒÀ8ÑÌâŒ/
 ?
 java:S3864 "!Remove this use of "Stream.peek".(Õ„Šï8ÑÌâŒ/
-m
-java:S1192»"JDefine a constant instead of duplicating this literal "Saravanan" 5 times.(û¹ş°ÿÿÿÿÿ8ÑÌâŒ/
-[	java:S106¿"9Replace this use of System.out or System.err by a logger.(ŞŸ¨şÿÿÿÿ8ÑÌâŒ/
-j
-java:S1192»"GDefine a constant instead of duplicating this literal "Kannan" 5 times.(û¹ş°ÿÿÿÿÿ8ÑÌâŒ/
-X	java:S1253"<This block of commented-out lines of code should be removed.(Œ¸×Ø8ÑÌâŒ/
-U	java:S1064"9Replace this use of System.out or System.err by a logger.(°ú¬Š8ÑÌâŒ/
 [	java:S106õ"9Replace this use of System.out or System.err by a logger.(±½„Àûÿÿÿÿ8ÑÌâŒ/
-I
-java:S1612",Replace this lambda with a method reference.(½õ±Ö8ÑÌâŒ/
+O
+java:S1612¿",Replace this lambda with a method reference.(ŞŸ¨şÿÿÿÿ8ÑÌâŒ/
 {
 java:S1450"^Remove the "newNumberStream" field and declare it as a local variable in the relevant methods.(®ÅÒÀ8ÑÌâŒ/
-l
-java:S1192»"IDefine a constant instead of duplicating this literal "Raghavan" 5 times.(û¹ş°ÿÿÿÿÿ8ÑÌâŒ/
+X	java:S1253"<This block of commented-out lines of code should be removed.(Œ¸×Ø8ÑÌâŒ/
+[	java:S106¿"9Replace this use of System.out or System.err by a logger.(ŞŸ¨şÿÿÿÿ8ÑÌâŒ/
+I
+java:S1612",Replace this lambda with a method reference.(½õ±Ö8ÑÌâŒ/

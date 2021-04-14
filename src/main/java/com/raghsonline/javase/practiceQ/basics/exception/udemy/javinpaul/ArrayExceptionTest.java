@@ -1,4 +1,4 @@
-package com.raghsonline.javase.practiceQ.basics.udemy.javinpaul;
+package com.raghsonline.javase.practiceQ.basics.exception.udemy.javinpaul;
 
 /**
  * <p>

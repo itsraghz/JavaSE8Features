@@ -1,11 +1,11 @@
 
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Øœ›Ñıÿÿÿÿ8æıùŠŒ/
-œ
-java:S2159"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(û“„‚ÿÿÿÿÿ8¥‘óŠŒ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(û“„‚ÿÿÿÿÿ8¥‘óŠŒ/
 
 java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(£×¸Óùÿÿÿÿ8¢±ùŠŒ/
+W	java:S125	"<This block of commented-out lines of code should be removed.(ŒîÌ'8ç×ìŠŒ/
 U	java:S106"9Replace this use of System.out or System.err by a logger.(©‹°ú8¢±ùŠŒ/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(û“„‚ÿÿÿÿÿ8¥‘óŠŒ/
 |
 java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(ÌÓı8¢±ùŠŒ/
-W	java:S125	"<This block of commented-out lines of code should be removed.(ŒîÌ'8ç×ìŠŒ/
+œ
+java:S2159"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(û“„‚ÿÿÿÿÿ8¥‘óŠŒ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Øœ›Ñıÿÿÿÿ8æıùŠŒ/
