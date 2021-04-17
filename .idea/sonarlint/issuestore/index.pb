@@ -155,3 +155,5 @@ rsrc/main/java/com/raghsonline/javase/practiceQ/basics/intializationOrder/OCAPre
 rsrc/main/java/com/raghsonline/javase/practiceQ/basics/intializationOrder/OCAPrepGuide/OCAJava8Ch4Q23OrderTest.java,6\c\6c0dc17b34783639ce520ee6fe87388d08301afb
 ‰
 Ysrc/main/java/com/raghsonline/javase/basics/constructor/OCAPrepGuide/SuperMethodTest.java,b\c\bc800480df97c9d2a1d7b50d8a7ec253a5e76d01
+Š
+Zsrc/main/java/com/raghsonline/javase/basics/overloading/OCAPrepGuide/StaticHidingTest.java,c\4\c4990073a91b27adbf2f2f4cf9333c072ddd58e0
