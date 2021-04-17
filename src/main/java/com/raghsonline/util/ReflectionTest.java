@@ -3,7 +3,6 @@ package com.raghsonline.util;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
-import java.util.logging.Logger;
 
 public class ReflectionTest {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException {

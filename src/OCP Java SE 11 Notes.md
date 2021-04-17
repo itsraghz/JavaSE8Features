@@ -143,3 +143,21 @@ after the copy was made.
    static in the parent class (method hiding). Likewise, the method must not be marked
    as static in the child class if it is not marked as static in the parent class (method
    overriding).
+   
+## String Vs StringBuilder
+
+* StringBuilder doesn't override the `equals()` method, because it is a `Builder` object,
+  and it is deemed to be a `work in progress` object at anytime and hence it does not
+  make sense to compare the contents out of it. 
+  > If at all needed, we can use the `.toString()`
+  on the StringBuilder object and use the resultant String on the `equals()` method.
+  
+  > The rules for `StringBuilder` holds good for `StringBuffer` class as well.
+  
+* StringBuilder also does not override the `hashCode()` method and moreover the
+  native JVM implementation returns two different hashcode values for two different
+  StringBuilder instances despite they share the same content (equality). 
+  > Reason being, if these StringBuilder objects are used as a Key in any `hash` 
+  > structures like `HashTable`, or `HashMap` and the value being pointed to by 
+  > the StringBuilder object reference might vary over time, the keys will lose
+  > its sanity in the Hash Data Structure.
