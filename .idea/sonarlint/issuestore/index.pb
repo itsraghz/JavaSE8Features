@@ -161,3 +161,5 @@ Zsrc/main/java/com/raghsonline/javase/basics/overloading/OCAPrepGuide/StaticHidi
 Ssrc/main/java/com/raghsonline/javase/basics/api/OCAPrepGuide/StringBuilderTest.java,a\3\a35c8f5b609490a65b9e6355e9f77a98baea0a63
 f
 6src/main/java/com/raghsonline/util/ReflectionTest.java,9\c\9c8a7618f68c06a897788d128b1e532615b244dd
+Š
+Zsrc/main/java/com/raghsonline/javase/basics/equalsMethod/OCAPrepGuide/ArrayEqualsTest.java,8\e\8e7301d475d455dd5221f301ce62567d606fceae
