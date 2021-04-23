@@ -324,3 +324,13 @@ public void demoParse(){
     System.out.println(time); // 11:22
 }
 ```
+
+## Arrays
+
+* `System.arrayCopy()` method
+* An useful utility class `java.util.Arrays` has the following methods
+    * `Arrays.fill(start, endNonInclusive, value)` - to fill the elements with certain values
+    * `Arrays.sort(arrayToSort)` - using the natural comparator
+    * `Arrays.sort(arrayToSort, ComparatorInstance)` - using the custom Comparator
+    * `Arrays.binarySearch(arrayToBeSearched, valueToSearch)`
+    * `Arrays.equals(array1, array2)` - compares the contents of the arrays supplied and returns a boolean value
