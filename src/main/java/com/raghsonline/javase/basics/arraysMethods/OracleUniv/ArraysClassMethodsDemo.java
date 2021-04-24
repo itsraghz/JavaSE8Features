@@ -2,8 +2,7 @@ package com.raghsonline.javase.basics.arraysMethods.OracleUniv;
 
 import com.raghsonline.util.LoggerUtil;
 
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.*;
 
 class LengthCompare implements Comparator<String> {
 
@@ -14,13 +13,60 @@ class LengthCompare implements Comparator<String> {
         return 0;
     }
 }
-public class ArraysClassMethosDemo {
+public class ArraysClassMethodsDemo {
 
     public static void main(String[] args) {
         arraysFillMethodDemo();
         arraysEqualsMethodDemo();
         arraysSortDefaultComparatorDemo();
         arraysSortCustomComparatorDemo();
+        arraysAsListOpsDemo();
+    }
+
+    private static void arraysAsListOpsDemo() {
+        LoggerUtil.log("--------------------------");
+        LoggerUtil.log("Arrays asList Method Demo");
+        LoggerUtil.log("--------------------------");
+        String[] arr = {"Tea","Cake"};
+        List<String> texts = Arrays.asList(arr);
+        LoggerUtil.log("Array :: " + arr);
+        LoggerUtil.log("Array :: " + Arrays.toString(arr));
+        LoggerUtil.log("Array as a List :: " + texts);
+
+        //1. Add an element to the base Array
+        /*arr[2] = "Coffee"; //java.lang.ArrayIndexOutOfBoundsException
+        LoggerUtil.log("(Add) Array :: " + Arrays.toString(arr));
+        LoggerUtil.log("(Add) Array as a List :: " + texts); */
+
+        /**
+         Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+         at com.raghsonline.javase.basics.arraysMethods.OracleUniv.ArraysClassMethodsDemo.arraysAsListOpsDemo(ArraysClassMethodsDemo.java:37)
+         at com.raghsonline.javase.basics.arraysMethods.OracleUniv.ArraysClassMethodsDemo.main(ArraysClassMethodsDemo.java:23)
+         */
+
+        //2. Add a new String to texts (list)
+        /* texts.add("New"); //throws UnSupportedOperationException
+        LoggerUtil.log("(Op1) Array as a List :: " + texts); */
+
+        /**
+         Exception in thread "main" java.lang.UnsupportedOperationException
+         at java.base/java.util.AbstractList.add(AbstractList.java:153)
+         at java.base/java.util.AbstractList.add(AbstractList.java:111)
+         at com.raghsonline.javase.basics.arraysMethods.OracleUniv.ArraysClassMethosDemo.arraysAsListOpsDemo(ArraysClassMethodsDemo.java:37)
+         at com.raghsonline.javase.basics.arraysMethods.OracleUniv.ArraysClassMethosDemo.main(ArraysClassMethodsDemo.java:23)
+         */
+
+        //3. Replace an element in the list
+        // Ex. Replace 'Tea' with 'Coffee' in texts list
+        texts.set(0, "Coffee");
+        LoggerUtil.log("(Update to List) Array :: " + Arrays.toString(arr));
+        LoggerUtil.log("(Update to List) Array as a List :: " + texts);
+
+        //3. Replace an element in the array
+        // Ex. Replace 'Tea' with 'Coffee' in texts list
+        arr[0]="Coffee-New";
+        LoggerUtil.log("(Update to Array) Array :: " + Arrays.toString(arr));
+        LoggerUtil.log("(Update to Array) Array as a List :: " + texts);
     }
 
     private static void arraysSortCustomComparatorDemo() {
@@ -48,8 +94,6 @@ public class ArraysClassMethosDemo {
     }
 
     private static void arraysEqualsMethodDemo() {
-        Object obj = null;
-
         LoggerUtil.log("-------------------------");
         LoggerUtil.log("Arrays Equals Method Demo");
         LoggerUtil.log("-------------------------");
